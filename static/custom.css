@@ -1,0 +1,36 @@
+:root {
+  --accent: rgb(201, 103, 149);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+.col-bisque {
+    background-color: #ffdddd;
+}
+
+.col-lightblue {
+    background-color: #ddeeff;
+}
+
+.col-lightgreen {
+    background-color: #ddffdd;
+}

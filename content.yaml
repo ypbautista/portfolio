@@ -1,0 +1,29 @@
+home:
+  title: "Learning by Doing"
+  body: "Hi, I'm Ynna Pauline. I'm currently an apprentice in application development, and this is my creative space to practice my skills and showcase my work."
+  notice: "Curious? Take a look around!"
+
+  link:
+    text: "I'm a hyperlink"
+    url: "https://example.com"
+
+  image:
+    src: "images/snow.jpg"
+    alt: "This is a black swan"
+    caption: "This is a caption"
+
+  columns:
+    - text: "Column 1"
+      color: "bisque"
+    - text: "Column 2"
+      color: "lightblue"
+    - text: "Column 3"
+      color: "lightgreen"
+
+  show_contact_form: true
+
+about:
+  title: "About Me"
+  body: "This page tells you about me."
+  show_contact_form: false
+

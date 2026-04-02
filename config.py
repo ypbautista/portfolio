@@ -1,0 +1,12 @@
+import os
+
+MAIL_SERVER = "mail.smtp2go.com"
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+
+MAIL_USERNAME = os.getenv("SMTP2GO_USER")
+MAIL_PASSWORD = os.getenv("SMTP2GO_PASS")
+
+MAIL_DEFAULT_SENDER = os.getenv("MAIL_DEFAULT_SENDER")
+
+CONTACT_EMAIL = os.getenv("CONTACT_EMAIL")

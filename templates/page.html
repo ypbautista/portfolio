@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block content %}
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.body }}</p>
+
+{% if page.notice %}
+<p class="notice">{{ page.notice }}</p>
+{% endif %}
+
+{% if page.link %}
+<a href="{{ page.link.url }}">{{ page.link.text }}</a>
+{% endif %}
+
+{% if page.image %}
+<figure>
+    <img src="{{ url_for('static', filename=page.image.src) }}" alt="{{ page.image.alt }}">
+    <figcaption>{{ page.image.caption }}</figcaption>
+</figure>
+{% endif %}
+
+{% if page.columns %}
+<div class="row">
+    {% for col in page.columns %}
+    <div class="column col-{{ col.color }}">
+        {{ col.text }}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if page.show_contact_form %}
+{% include "contact_form.html" %}
+{% endif %}
+
+{% endblock %}

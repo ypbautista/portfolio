@@ -13,17 +13,42 @@ home:
     caption: "This is a caption"
 
   columns:
-    - text: "Column 1"
-      color: "bisque"
-    - text: "Column 2"
-      color: "lightblue"
-    - text: "Column 3"
-      color: "lightgreen"
+    - title: "Build"
+      body: "This is the first column. You can write more detailed content here."
+
+    - title: "Learn"
+      body: "Second column content goes here."
+
+    - title: "Explore"
+      body: "Third column with its own text."
 
   show_contact_form: true
 
 about:
   title: "About Me"
-  body: "This page tells you about me."
+  body: "Currently working as an Application Developer apprentice, where I learn something new every day, sometimes by design and sometimes by debugging. This experience allows me to continuously improve my technical skills and gain confidence in building reliable applications."
+
+  image:
+    src: "images/dog.jpg"
+    alt: "This is a dog"
+    caption: "This is a caption"
+
   show_contact_form: false
+  aside:
+    title: "Fun Fact"
+    body: "This is some additional information about me that complements the main content."
+
+projects:
+  title: "Projects"
+  body: "A browser-based Rock Paper Scissors game where users can play against the computer. The application handles user input, generates random choices, and displays results instantly with a simple and responsive interface."
+
+  sections:
+    - heading: "One"
+    - body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit ultrices magna, at fermentum arcu iaculis a. Integer non libero nec nulla consequat tincidunt. Suspendisse potenti. Curabitur sit amet eros nec urna facilisis bibendum. Donec euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi, at fermentum orci ligula non odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+
+    - heading: "Two"
+    - body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit ultrices magna, at fermentum arcu iaculis a. Integer non libero nec nulla consequat tincidunt. Suspendisse potenti. Curabitur sit amet eros nec urna facilisis bibendum. Donec euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi, at fermentum orci ligula non odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+
+    - heading: "Three"
+    - body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit ultrices magna, at fermentum arcu iaculis a. Integer non libero nec nulla consequat tincidunt. Suspendisse potenti. Curabitur sit amet eros nec urna facilisis bibendum. Donec euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi, at fermentum orci ligula non odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
 

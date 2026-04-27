@@ -5,14 +5,27 @@
 {% block content %}
 
 <h1>{{ page.title }}</h1>
-<p>{{ page.body }}</p>
+<div>
+    {% if page.aside %}
+    <aside>
+        <h5>{{ page.aside.title }}</h5>
+        <p>{{ page.aside.body }}</p>
+    </aside>
+    {% endif %}
+        {% if page.sections %}
+        {% for section in page.sections %}
+            <h2>{{ section.heading }}</h2>
+            <p>{{ section.body }}</p>
+        {% endfor %}
+    {% else %}
+        <p>{{ page.body }}</p>
+    {% endif %}
+</div>
+
+
 
 {% if page.notice %}
 <p class="notice">{{ page.notice }}</p>
-{% endif %}
-
-{% if page.link %}
-<a href="{{ page.link.url }}">{{ page.link.text }}</a>
 {% endif %}
 
 {% if page.image %}
@@ -22,11 +35,29 @@
 </figure>
 {% endif %}
 
+{% for image in page.images %}
+<figure>
+    <img src="{{ url_for('static', filename=image.src) }}" alt="{{ image.alt }}">
+    <figcaption>{{ image.caption }}</figcaption>
+</figure>
+{% endfor %}
+
+{% if page.link %}
+<a href="{{ page.link.url }}">{{ page.link.text }}</a>
+{% endif %}
+
+
+
 {% if page.columns %}
 <div class="row">
     {% for col in page.columns %}
     <div class="column col-{{ col.color }}">
-        {{ col.text }}
+        {% if col.title %}
+        <h3>{{ col.title }}</h3>
+        {% endif %}
+        {% if col.body %}
+        <p>{{ col.body }}</p>
+        {% endif %}
     </div>
     {% endfor %}
 </div>

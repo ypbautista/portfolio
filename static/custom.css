@@ -1,6 +1,10 @@
 :root {
-  --accent: rgb(201, 103, 149);
+  color-scheme: light dark;
 }
+
+/*:root {
+  --accent: rgb(201, 103, 149);
+}*/
 
 .container {
   display: flex;
@@ -20,9 +24,8 @@
   -ms-flex: 1;
   flex: 1;
   padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
 }
-
+/*
 .col-bisque {
     background-color: #ffdddd;
 }
@@ -34,3 +37,5 @@
 .col-lightgreen {
     background-color: #ddffdd;
 }
+*/
+

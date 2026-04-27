@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
-            const dialog = btn.nextElementSibling;
+            const targetId = btn.dataset.target;
+            const dialog = document.getElementById(targetId);
             if (dialog) dialog.showModal();
         });
     });

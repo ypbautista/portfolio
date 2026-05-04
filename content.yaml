@@ -1,5 +1,5 @@
 home:
-  title: "Learning by Doing"
+  title: "Learning by Doing 🚀"
   body: "Hi, I'm Ynna Pauline. I'm currently an apprentice in application development, and this is my creative space to practice my skills and showcase my work."
   notice: "Curious? Take a look around!"
 
@@ -13,19 +13,19 @@ home:
     caption: "Error 404: Summer not found."
 
   columns:
-    - title: "Build"
+    - title: "Build 🛠️"
       body: "Where ideas get turned into code and “it works on my machine” becomes “it works everywhere (hopefully).” I build projects, break things, fix them, and repeat."
 
-    - title: "Learn"
+    - title: "Learn 📚"
       body: "Collecting programming languages like Pokémon and pretending I’ll master them all someday."
 
-    - title: "Explore"
+    - title: "Explore 🌍"
       body: "Because “I wonder what this button does” is a valid engineering strategy."
 
   show_contact_form: true
 
 about:
-  title: "About Me"
+  title: "About Me 🙋‍♀️"
   body: "Currently working as an Application Developer apprentice, where I learn something new every day, sometimes by design and sometimes by debugging. This experience allows me to continuously improve my technical skills and gain confidence in building reliable applications."
 
   image:
@@ -48,7 +48,7 @@ about:
         - "Understanding how web applications work from the ground up"
         - "Improving my debugging skills"
 
-    - heading: "Goals"
+    - heading: "Goals 🎯"
     - list:
         - "Improve my understanding of system architecture"
         - "Learn more about databases and data management"
@@ -59,7 +59,7 @@ projects:
   body: "Here are some of the projects I've worked on."
 
   sections:
-    - heading: "Procrastination Tracker"
+    - heading: "Procrastination Tracker ⏰"
     - body: "A productivity tool that starts when you say 'I'm going to be productive now' and immediately begins documenting your downfall. It tracks your work, quick breaks, and those accidental 47-minute side quests that were definitely not part of the plan. At the end, it gives a brutally honest summary like: 'Focus time: 12 minutes. Side quest completion rate: legendary.' Built to explore timing logic, user interaction, and the art of getting nothing done while feeling very busy."
     - links:
         - label: "Try it out"

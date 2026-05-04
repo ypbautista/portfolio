@@ -39,3 +39,25 @@
 }
 */
 
+/* keep simple.css base, just enhance links in sections */
+
+.button, .openBtn, .closeBtn, button[type="submit"] {
+    font-weight: 600;
+}
+
+.closeBtn {
+  background-color: tomato;
+  border: none;
+}
+.closeBtn:hover {
+    background-color: #ff8288 !important;
+}
+
+button[type="submit"] {
+    background-color: forestgreen;
+    border: none;
+}
+button[type="submit"]:hover {
+    background-color: #27aa63;  
+    cursor: pointer;
+}

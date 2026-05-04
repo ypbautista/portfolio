@@ -17,6 +17,14 @@
             <h2>{{ section.heading }}</h2>
             <p>{{ section.body }}</p>
 
+            {% if section.list %}
+              <ul>
+                {% for item in section.list %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
             {% if section.links %}
                 <div class="section-links">
                     {% for link in section.links %}

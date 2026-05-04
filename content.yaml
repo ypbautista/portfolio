@@ -31,7 +31,7 @@ about:
   image:
     src: "images/dog.jpg"
     alt: "This is a dog"
-    caption: "Meet my assistant. He specializes in paws-on debugging."
+    caption: "Meet my assistant. He specializes in paws-on debugging. 🐶"
 
   show_contact_form: false
   aside:

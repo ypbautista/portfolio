@@ -38,6 +38,22 @@ about:
     title: "Fun Fact"
     body: "In the 1800s, Ada Lovelace became the first computer programmer, making her one of the earliest women to shape modern technology."
 
+  sections:
+    - body: "Currently working as an Application Developer apprentice, where I learn something new every day, sometimes by design and sometimes by debugging. This experience allows me to continuously improve my technical skills and gain confidence in building reliable applications."
+
+    - heading: "What I'm Learning 🧠"
+    - list:
+        - "Building full-stack understanding (front-end and back-end)"
+        - "Writing clean, maintainable code"
+        - "Understanding how web applications work from the ground up"
+        - "Improving my debugging skills"
+
+    - heading: "Goals"
+    - list:
+        - "Improve my understanding of system architecture"
+        - "Learn more about databases and data management"
+
+
 projects:
   title: "Projects 💻"
   body: "Here are some of the projects I've worked on."

@@ -12,10 +12,26 @@
         <p>{{ page.aside.body }}</p>
     </aside>
     {% endif %}
-        {% if page.sections %}
+    {% if page.sections %}
         {% for section in page.sections %}
             <h2>{{ section.heading }}</h2>
             <p>{{ section.body }}</p>
+
+            {% if section.links %}
+                <div class="section-links">
+                    {% for link in section.links %}
+                        {% if link.url %}
+                            <a class="button" href="{{ link.url }}" target="_blank" rel="noopener">
+                                {{ link.label }}
+                            </a>
+                        {% else %}
+                            <button class="button openBtn" data-target="notReadyDialog">
+                                {{ link.label }}
+                            </button>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
         {% endfor %}
     {% else %}
         <p>{{ page.body }}</p>
@@ -65,6 +81,16 @@
 
 {% if page.show_contact_form %}
 {% include "contact_form.html" %}
+
+
 {% endif %}
+
+<dialog id="notReadyDialog" class="contactDialog">
+    <div>
+        <h2>Not ready yet</h2>
+        <p>Estimated start: eventually, probably not today.</p>
+        <button type="button" class="closeBtn">Close</button>
+    </div>
+</dialog>
 
 {% endblock %}

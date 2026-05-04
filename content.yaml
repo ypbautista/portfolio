@@ -4,23 +4,23 @@ home:
   notice: "Curious? Take a look around!"
 
   link:
-    text: "I'm a hyperlink"
+    text: "See more"
     url: "https://example.com"
 
   image:
     src: "images/snow.jpg"
     alt: "This is a black swan"
-    caption: "This is a caption"
+    caption: "Error 404: Summer not found."
 
   columns:
     - title: "Build"
-      body: "This is the first column. You can write more detailed content here."
+      body: "Where ideas get turned into code and “it works on my machine” becomes “it works everywhere (hopefully).” I build projects, break things, fix them, and repeat."
 
     - title: "Learn"
-      body: "Second column content goes here."
+      body: "Collecting programming languages like Pokémon and pretending I’ll master them all someday."
 
     - title: "Explore"
-      body: "Third column with its own text."
+      body: "Because “I wonder what this button does” is a valid engineering strategy."
 
   show_contact_form: true
 
@@ -31,23 +31,25 @@ about:
   image:
     src: "images/dog.jpg"
     alt: "This is a dog"
-    caption: "This is a caption"
+    caption: "Meet my assistant. He specializes in paws-on debugging."
 
   show_contact_form: false
   aside:
     title: "Fun Fact"
-    body: "This is some additional information about me that complements the main content."
+    body: "In the 1800s, Ada Lovelace became the first computer programmer, making her one of the earliest women to shape modern technology."
 
 projects:
-  title: "Projects"
-  body: "A browser-based Rock Paper Scissors game where users can play against the computer. The application handles user input, generates random choices, and displays results instantly with a simple and responsive interface."
+  title: "Projects 💻"
+  body: "Here are some of the projects I've worked on."
 
   sections:
-    - heading: "One"
-    - body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit ultrices magna, at fermentum arcu iaculis a. Integer non libero nec nulla consequat tincidunt. Suspendisse potenti. Curabitur sit amet eros nec urna facilisis bibendum. Donec euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi, at fermentum orci ligula non odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+    - heading: "Procrastination Tracker"
+    - body: "A productivity tool that starts when you say 'I'm going to be productive now' and immediately begins documenting your downfall. It tracks your work, quick breaks, and those accidental 47-minute side quests that were definitely not part of the plan. At the end, it gives a brutally honest summary like: 'Focus time: 12 minutes. Side quest completion rate: legendary.' Built to explore timing logic, user interaction, and the art of getting nothing done while feeling very busy."
+    - links:
+        - label: "Try it out"
 
-    - heading: "Two"
-    - body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit ultrices magna, at fermentum arcu iaculis a. Integer non libero nec nulla consequat tincidunt. Suspendisse potenti. Curabitur sit amet eros nec urna facilisis bibendum. Donec euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi, at fermentum orci ligula non odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+    - heading: "RPS ✊✋✌"
+    - body: "A browser-based Rock Paper Scissors game where users can play against the computer. The application handles user input, generates random choices, and displays results instantly with a simple and responsive interface."
 
     - heading: "Three"
     - body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit ultrices magna, at fermentum arcu iaculis a. Integer non libero nec nulla consequat tincidunt. Suspendisse potenti. Curabitur sit amet eros nec urna facilisis bibendum. Donec euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi, at fermentum orci ligula non odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."

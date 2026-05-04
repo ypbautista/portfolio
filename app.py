@@ -59,6 +59,14 @@ def contact():
     return redirect(url_for("home"))
 
     
+section = {
+    "heading": "Projects",
+    "links": [
+        {"label": "Live App", "url": "https://example.com"},
+        {"label": "Cool Feature", "url": None}
+    ]
+}
+
 
 
 

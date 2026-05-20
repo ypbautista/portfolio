@@ -1,26 +1,30 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import yaml
-from mail import mail, send_email
+import os
 from dotenv import load_dotenv
+from mail import mail, send_email
 
 load_dotenv()
 
-import os
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "dev")
 app.config.from_object("config")
 
+# Initialize Flask-Mail
 mail.init_app(app)
+
 
 def load_content():
     with open("content.yaml") as f:
         return yaml.safe_load(f)
+
 
 # Home page
 @app.route("/")
 def home():
     content = load_content()
     return render_template("page.html", page=content["home"])
+
 
 # Dynamic pages
 @app.route("/<page_name>")
@@ -32,6 +36,7 @@ def page(page_name):
         return "Page not found", 404
 
     return render_template("page.html", page=page_data)
+
 
 # Contact form submission
 @app.route("/contact", methods=["POST"])
@@ -45,19 +50,19 @@ def contact():
     body = f"""
     Name: {name}
     Email: {email}
-    
+
     Message:
     {message}
     """
+
     try:
         send_email(app, app.config["CONTACT_EMAIL"], subject, body)
         flash("Form submitted successfully!")
     except Exception as e:
-        print(e)
+        print("Contact form error:", e)
         flash("Error submitting form!")
-    
-    return redirect(url_for("home"))
 
+    return redirect(url_for("home"))
 
 
 if __name__ == "__main__":

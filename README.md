@@ -5,8 +5,7 @@ Python 3.X+ installed
 
 2. Clone the repository
 git clone [https://github.com/ypbautista/portfolio.git](https://github.com/ypbautista/portfolio.git)
-
-cd portfolio
+   cd portfolio
 
 4. Create a Virtual Environment
 

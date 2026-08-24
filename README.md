@@ -1,10 +1,10 @@
 # portfolio
 
-1. Prerequisites
-	Python 3.X+ installed
-	git installed
+1. **Prerequisites**
+	* Python 3.X+ installed
+	* git installed
 
-2. Clone the repository
+2. **Clone the repository**
 	git clone [https://github.com/ypbautista/portfolio.git](https://github.com/ypbautista/portfolio.git)
 	cd portfolio
 

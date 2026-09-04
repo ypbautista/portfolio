@@ -23,6 +23,11 @@
 
 5. **Configure Environment Variables**
 
+    Copy the example environment file and fill in your actual credentials:
+    ```
+    cp .env.example .env
+    ```
+
 6. **Run the Application**
    ```bash
    python app.py
